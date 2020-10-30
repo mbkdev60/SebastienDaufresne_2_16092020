@@ -1,0 +1,49 @@
+
+body{
+    margin: 0 auto;
+}
+
+header{
+    font-family: Raleway;
+    display: flex;
+    justify-content: space-between;
+    width: 1080px;
+
+}
+
+.flex{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 400px;
+}
+
+footer{
+    font-family: Raleway;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    width: 1534px;
+}
+
+a:hover{
+    border-top: 2px #0065FC solid;
+    padding-top: 28px;
+}
+ 
+li a{
+    text-decoration: none;
+}
+img{
+    padding: 30px;
+}
+
+ul.flex li:nth-child(2) a{
+    color: black;
+}
+
+ul.flex li:first-child a{
+    border-top: 2px blue solid;
+    padding-top: 28px;
+}
