@@ -59,23 +59,37 @@ ul.flex li:first-child a{
     font-size: 22px
 }
 
-.clique{
-    font-size: 22px;
+.recherche{
+    display: flex;
+    flex-direction: row;
+}
+
+input{
+    font-size: 20px;
+    border: 2px #F2F2F2 solid;
+}
+
+.boutton{
+    border: 10px #0065FC solid;
+    border-radius: 0px 10px 10px 0px;
 }
 
 form i{
-    font-size: 20px;
     background-color: #F2F2F2;
     border: 10px #F2F2F2 solid;
-    border-left: 20px #F2F2F2 solid;
-    border-radius: 20px;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 22px;
 }
 
-form input{
-    border: 10px #F2F2F2 solid;
-    border-radius: 10px;
+.tag{
+    display: flex;
+    justify-content: space-between;
+    width: 900px
 }
 
-form input ::placeholder{
-    color: black;
+h2 i{
+    border: 10px #DEEBFF solid;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #DEEBFF;
+    color: #0065FC;
 }
