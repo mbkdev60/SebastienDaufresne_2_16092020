@@ -24,7 +24,7 @@ footer{
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-around;
-    width: 1534px;
+    width: 100%;
 }
 
 a:hover{
