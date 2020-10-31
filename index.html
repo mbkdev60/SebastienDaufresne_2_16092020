@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5541233122.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <body>
  
     <header>
-      <img src="images/logo/Reservia.png" alt="Logo du site" height="40px" width="80px">
+      <img src="images/logo/Reservia.png" alt="Logo du site" >
         <nav>
             <ul class="flex">
                 <li><a href="#">Hébergement</a></li>
@@ -19,8 +20,19 @@
         </nav>
     </header>
 
-    <h1>Trouvez votre hébergement de vos rêves</h1>
-    <p>En plein centre ville ou en pleine nature</p>
+    <section class="haut">
+        <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <form>
+          <i class="fas fa-map-marker-alt"></i>
+            <input class="clique" type="search" id="maRecherche" name="q"
+               placeholder="Marseille, France">
+              <button class="boutton">Rechercher</button>
+          </form>
+          <h2>Filtres</h2> <i class="fas fa-money-bill-wave"></i>
+    </section>
+
+
     <footer>
         <div><h1> À propos</h1>
         <p>Fonctionnement du site</p>

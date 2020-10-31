@@ -37,6 +37,7 @@ li a{
 }
 img{
     padding: 30px;
+    height: 40px;
 }
 
 ul.flex li:nth-child(2) a{
@@ -44,6 +45,37 @@ ul.flex li:nth-child(2) a{
 }
 
 ul.flex li:first-child a{
-    border-top: 2px blue solid;
+    border-top: 2px #0065FC solid;
     padding-top: 28px;
+}
+
+.haut{
+    padding: 30px;
+}
+
+.boutton{
+    color:#ffff;
+    background-color: #0065FC;
+    font-size: 22px
+}
+
+.clique{
+    font-size: 22px;
+}
+
+form i{
+    font-size: 20px;
+    background-color: #F2F2F2;
+    border: 10px #F2F2F2 solid;
+    border-left: 20px #F2F2F2 solid;
+    border-radius: 20px;
+}
+
+form input{
+    border: 10px #F2F2F2 solid;
+    border-radius: 10px;
+}
+
+form input ::placeholder{
+    color: black;
 }
