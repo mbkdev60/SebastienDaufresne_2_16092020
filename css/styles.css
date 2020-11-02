@@ -1,14 +1,12 @@
-
 body{
-    margin: 0 auto;
+    margin: 0;
 }
 
 header{
     font-family: Raleway;
     display: flex;
     justify-content: space-between;
-    width: 1080px;
-
+    width: 100%;
 }
 
 .flex{
@@ -17,6 +15,7 @@ header{
     justify-content: space-between;
     margin-top: 30px;
     width: 400px;
+    margin-right: 60px;
 }
 
 footer{
@@ -24,6 +23,7 @@ footer{
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-around;
+    width: 1534px;
     width: 100%;
 }
 
@@ -35,6 +35,7 @@ a:hover{
 li a{
     text-decoration: none;
 }
+
 img{
     padding: 30px;
     height: 40px;
@@ -49,9 +50,12 @@ ul.flex li:first-child a{
     padding-top: 28px;
 }
 
-aside{
-    padding: 30px;
+.barre{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
 }
+
 
 .boutton{
     color:#ffff;
@@ -62,6 +66,7 @@ aside{
 .recherche{
     display: flex;
     flex-direction: row;
+    margin: 30px;
 }
 
 input{
@@ -81,37 +86,41 @@ form i{
     font-size: 22px;
 }
 
-
 input::-webkit-input-placeholder{
     color: black;
 }
 
-.filtre{
-   display: flex; 
-   justify-content: space-between;
-   align-items: center;
-   margin-left: 36px;
-   width: 1000px;
-}
-
-i{
+ span i{
     color: #0065FC;
     background-color: #F2F2F2;
     border: 10px #F2F2F2 solid;
-    border-radius: 10px 10px 10px 10px;
-    
+    border-radius: 60px;   
 }
 
-span{
+span:hover{
+    color:#0065FC;
+}
+
+#emote{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#emote h2{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+#emote span{
+    font-weight: bold;
     border: 2px #F2F2F2 solid;
-    border-radius: 60px 10px 10px 60px;
+    border-radius: 60px;
+    margin-right: 150px;
 }
 
-section p{
-    border: 2px #F2F2F2 solid;
-    border-radius: 60px 60px 60px 60px;
+.info{
+    margin-left: 30px;
 }
 
-section p:hover{
-    color: #0065FC;
-}
