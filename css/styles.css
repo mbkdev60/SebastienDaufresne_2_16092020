@@ -1,13 +1,12 @@
 body{
     margin: 0;
+    width: 100%;
 }
 
 header{
-    font-family: Raleway;
     display: flex;
     justify-content: space-between;
     justify-content: center;
-    width: 1400px;
 }
 
 .flex{
@@ -22,8 +21,6 @@ footer{
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-around;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 a:hover{
@@ -35,11 +32,12 @@ li a{
     text-decoration: none;
 }
 
-img{
+header img{
     padding: 30px;
-    margin-right: 400px;
     height: 40px;
+    margin-left: 400px;
 }
+
 
 ul.flex li:nth-child(2) a{
     color: black;
@@ -53,9 +51,7 @@ ul.flex li:first-child a{
 .barre{
     display: flex;
     flex-direction: column;
-    margin-left: 242px;
 }
-
 
 .boutton{
     color:#ffff;
@@ -94,7 +90,7 @@ input::-webkit-input-placeholder{
     color: #0065FC;
     background-color: #F2F2F2;
     border: 10px #F2F2F2 solid;
-    border-radius: 40px;   
+    border-radius: 50%;   
 }
 
 span:hover{
@@ -106,14 +102,9 @@ span:hover{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 218px;
     margin-top: 10px;
 }
 
-#emote h3{
-    margin-right: 30px;
-    margin-left: 30px;
-}
 
 #emote span{
     font-weight: bold;
@@ -123,8 +114,8 @@ span:hover{
     padding-right: 10px;
 }
 
-.info{
-    margin-left: 250px;
+.info span{
+    margin-left: 10px;
 }
 
 .marge{
@@ -135,8 +126,46 @@ h1{
     margin-bottom: 0px;
 }
 
-.infos{
-    border: 2px #F2F2F2 solid;
-    border-radius: 60px;
-    padding: 5px;
+.filtres p i{
+    color: #0065FC;
+    text-align: center;
+    border-radius: 50%;
+    border:solid 2px #F2F2F2;
+    height: 19px;
+    width: 24px;
+    padding-top: 5px;
+}
+
+.hebergement{
+    border-radius: 20px;
+    background-color:#F2F2F2;
+    width: 750px;
+
+}
+
+section img{
+    border-radius: 10px 10px 0px 0px;
+    height: 120px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+.chambre{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.color{
+    border-radius: 10px;
+    background-color: white;
+}
+
+figure h3{
+    margin-left: 14px;
+    margin-right: 40px;
 }
