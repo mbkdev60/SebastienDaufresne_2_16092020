@@ -139,14 +139,17 @@ h1{
 .hebergement{
     border-radius: 20px;
     background-color:#F2F2F2;
-    width: 750px;
+    width: 950px;
+    height: 650px;
+    margin-bottom: 20px;
 
 }
 
 section img{
-    border-radius: 10px 10px 0px 0px;
+    margin-top: 6px;
+    border-radius: 14px 14px 0px 0px;
     height: 120px;
-    width: 200px;
+    width: 250px;
     object-fit: cover;
 }
 
@@ -156,16 +159,78 @@ section img{
 }
 
 .chambre{
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .color{
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 20px;
+    background-color: white;
+    width: 270px;
+}
+
+.bleu{
+    box-shadow: 5px 5px 5px grey;
     border-radius: 10px;
     background-color: white;
+    width: 270px;
+}
+
+.rouge{
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 10px;
+    background-color: white;
+    width: 270px;
+}
+
+.violet{
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 10px;
+    background-color: white;
+    width: 270px;
+    margin-top: 30px;
+}
+
+.black{
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 10px;
+    background-color: white;
+    width: 270px;
+    margin-top: 30px;
+}
+
+.yellow{
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 10px;
+    background-color: white;
+    width: 270px;
+    margin-top: 30px;
 }
 
 figure h3{
-    margin-left: 14px;
-    margin-right: 40px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.debut{
+    margin-left: 44px;
+}
+
+.bas{
+    margin-left: 44px;
+}
+
+figure p{
+    text-align: left;
+    margin-left: 10px;
+}
+
+figure i{
+    text-align: left;
+    color: #0065FC;
 }
