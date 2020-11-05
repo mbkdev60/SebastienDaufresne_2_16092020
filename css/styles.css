@@ -1,20 +1,19 @@
 body{
     margin: 0;
     width: 100%;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
 header{
     display: flex;
     justify-content: space-between;
-    justify-content: center;
 }
 
 .flex{
     list-style: none;
     display: flex;
-    justify-content: space-between;
     margin-top: 30px;
-    width: 400px;
 }
 
 footer{
@@ -25,17 +24,17 @@ footer{
 
 a:hover{
     border-top: 2px #0065FC solid;
-    padding-top: 28px;
 }
  
 li a{
     text-decoration: none;
+    padding: 28px 30px 0 30px;
+    transition: .3s;
 }
 
 header img{
-    padding: 30px;
+    padding: 30px 0;
     height: 40px;
-    margin-left: 400px;
 }
 
 
@@ -86,70 +85,81 @@ input::-webkit-input-placeholder{
     color: black;
 }
 
- span i{
+.categorie{
+    display: flex;
+    align-items: center;
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+    margin-right: 14px;
+    transform: scale(1);
+}
+
+.categorie:hover{
+    transform: scale(1.04);
+}
+.categorie_icon{
     color: #0065FC;
     background-color: #F2F2F2;
-    border: 10px #F2F2F2 solid;
-    border-radius: 50%;   
-}
-
-span:hover{
-    color:#0065FC;
-}
-
-#emote{
+    width: 47px;
+    height: 47px;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    margin-top: 10px;
+    justify-content: center;
+    border-radius: 50px;
+    margin: -2px;
 }
 
-
-#emote span{
-    font-weight: bold;
-    border: 2px #F2F2F2 solid;
-    border-radius: 60px;
-    margin-right: 15px;
-    padding-right: 10px;
+.categorie_title{
+    margin: 0 16px;
+    font-size: 16px;
 }
 
-.info span{
-    margin-left: 10px;
+.info{
+    display: flex;
+    align-items: center;
 }
 
-.marge{
-    margin-top: 0px;
+.info_icone{
+    color: #0065FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px; 
+    margin-right: 14px; 
 }
 
 h1{
     margin-bottom: 0px;
 }
 
-.filtres p i{
-    color: #0065FC;
-    text-align: center;
-    border-radius: 50%;
-    border:solid 2px #F2F2F2;
-    height: 19px;
-    width: 24px;
-    padding-top: 5px;
+.filtres{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filtres h2{
+    margin: 0 20px 0 0;
+    font-size: 16px;
 }
 
 .hebergement{
-    border-radius: 20px;
+    border-radius: 10px;
     background-color:#F2F2F2;
-    width: 950px;
-    height: 650px;
+    width: 70%;
     margin-bottom: 20px;
-
+    margin: 0;
+    padding: 0 40px;
 }
 
 section img{
-    margin-top: 6px;
     border-radius: 14px 14px 0px 0px;
     height: 120px;
-    width: 250px;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -159,78 +169,79 @@ section img{
 }
 
 .chambre{
-    text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin: 0;
 }
 
 .color{
-    box-shadow: 5px 5px 5px grey;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
     border-radius: 20px;
     background-color: white;
-    width: 270px;
+    padding: 5px;
+    margin: 0 40px 40px 0;
+    width: calc(33% - 40px);
+    transform: scale(1);
+    transition: .3s;
 }
 
-.bleu{
-    box-shadow: 5px 5px 5px grey;
-    border-radius: 10px;
-    background-color: white;
-    width: 270px;
+.color:hover{
+    transform: scale(1.08);
 }
 
-.rouge{
-    box-shadow: 5px 5px 5px grey;
-    border-radius: 10px;
-    background-color: white;
-    width: 270px;
+.color:nth-child(3), .color:nth-child(6){
+    margin-right: 0;
 }
 
-.violet{
-    box-shadow: 5px 5px 5px grey;
-    border-radius: 10px;
-    background-color: white;
-    width: 270px;
-    margin-top: 30px;
+
+.color h3{
+    font-size: 14px;
+    margin: 0;
 }
 
-.black{
-    box-shadow: 5px 5px 5px grey;
-    border-radius: 10px;
-    background-color: white;
-    width: 270px;
-    margin-top: 30px;
-}
-
-.yellow{
-    box-shadow: 2px 2px 2px grey;
-    border-radius: 10px;
-    background-color: white;
-    width: 270px;
-    margin-top: 30px;
-}
-
-figure h3{
-    text-align: left;
+.color_texte{
     margin-left: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.debut{
-    margin-left: 44px;
 }
 
 .bas{
-    margin-left: 44px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    font-weight: 900;
 }
 
-figure p{
-    text-align: left;
-    margin-left: 10px;
+.color p{
+    font-size: 12px;
+    margin: 5px 0;
 }
 
-figure i{
-    text-align: left;
+.color i{
     color: #0065FC;
+}
+
+.cote{
+    border-radius: 20px;
+    background-color:#F2F2F2;
+    width: 30%;
+    margin-left: 60px;
+}
+
+.taille{
+    border-radius: 20px;
+    object-fit: cover;
+    height: 180px;
+    width: 120px;
+}
+
+.global{
+    display: flex;
+    width: 100%;
+}
+
+.carte{
+    background-color: white;
+    display: flex;
+}
+
+.non i {
+    color: #F2F2F2 ;
 }
