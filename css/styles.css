@@ -1,25 +1,32 @@
-body{
+/* Corps de la page web*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ 
     margin: 0;
     width: 100%;
-    box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
 
+.container{
+    width: 1200px;
+    margin: auto;
+}
+/* Fin de la corps de page */
+
+/* En tête du site web */
 header{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .flex{
     list-style: none;
     display: flex;
     margin-top: 30px;
-}
-
-footer{
-    background-color: #F2F2F2;
-    display: flex;
-    justify-content: space-around;
 }
 
 a:hover{
@@ -32,8 +39,7 @@ li a{
     transition: .3s;
 }
 
-header img{
-    padding: 30px 0;
+.photo img{
     height: 40px;
 }
 
@@ -46,10 +52,36 @@ ul.flex li:first-child a{
     border-top: 2px #0065FC solid;
     padding-top: 28px;
 }
+/* Fin de l'en tête de la page web */
 
+/* Début du pied de la page */
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+footer h3{
+    padding: 10px 0;
+}
+
+footer p{
+    padding: 10px 0;
+}
+/* Fin du footer */
+
+/* Barre de recherche et information complémentaires */
 .barre{
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
+}
+
+.barre p{
+    padding: 15px;
 }
 
 .boutton{
@@ -85,6 +117,29 @@ input::-webkit-input-placeholder{
     color: black;
 }
 
+h1{
+    margin-bottom: 0px;
+}
+
+.filtres{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.filtres h2{
+    margin: 0 20px 0 0;
+    font-size: 16px;
+}
+
+.bas{
+    font-weight: bold;
+}
+/* Fin de la barre de recherche et des informations complémentaires */
+
+/* Début des Hébergements à Marseille */
 .categorie{
     display: flex;
     align-items: center;
@@ -97,6 +152,7 @@ input::-webkit-input-placeholder{
 .categorie:hover{
     transform: scale(1.04);
 }
+
 .categorie_icon{
     color: #0065FC;
     background-color: #F2F2F2;
@@ -117,6 +173,7 @@ input::-webkit-input-placeholder{
 .info{
     display: flex;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .info_icone{
@@ -124,27 +181,11 @@ input::-webkit-input-placeholder{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
+    border: 2px solid #F2F2F2;
     width: 20px;
     height: 20px;
     border-radius: 50px; 
     margin-right: 14px; 
-}
-
-h1{
-    margin-bottom: 0px;
-}
-
-.filtres{
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.filtres h2{
-    margin: 0 20px 0 0;
-    font-size: 16px;
 }
 
 .hebergement{
@@ -154,18 +195,14 @@ h1{
     margin-bottom: 20px;
     margin: 0;
     padding: 0 40px;
+    margin-right: 30px;
 }
 
-section img{
+.color img{
     border-radius: 14px 14px 0px 0px;
     height: 120px;
     width: 100%;
     object-fit: cover;
-}
-
-.container{
-    width: 1200px;
-    margin: auto;
 }
 
 .chambre{
@@ -180,7 +217,7 @@ section img{
     background-color: white;
     padding: 5px;
     margin: 0 40px 40px 0;
-    width: calc(33% - 40px);
+    width: calc(35% - 40px);
     transform: scale(1);
     transition: .3s;
 }
@@ -193,20 +230,13 @@ section img{
     margin-right: 0;
 }
 
-
 .color h3{
     font-size: 14px;
     margin: 0;
 }
 
 .color_texte{
-    margin-left: 10px;
-}
-
-.bas{
-    margin-bottom: 50px;
-    margin-left: 0px;
-    font-weight: 900;
+    margin: 5px;
 }
 
 .color p{
@@ -218,30 +248,76 @@ section img{
     color: #0065FC;
 }
 
-.cote{
-    border-radius: 20px;
-    background-color:#F2F2F2;
-    width: 30%;
-    margin-left: 60px;
-}
-
-.taille{
-    border-radius: 20px;
-    object-fit: cover;
-    height: 180px;
-    width: 120px;
-}
-
 .global{
     display: flex;
+    padding: 5px;
     width: 100%;
 }
 
-.carte{
-    background-color: white;
+#ancre{
+    padding: 30px 0;
+}
+/* Fin des hébergements à Marseille */
+.cote{
+    background-color:#F2F2F2;
+    width: 30%;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.blanc img{
+    height: 120px;
+    width: 45%;
+    border-radius: 10px 0 0 10px;
+    object-fit: cover;
+}
+
+.blanc{
     display: flex;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0 0 40px 0;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    transform: scale(1);
+    transition: .3s;
+}
+
+.blanc:hover{
+    transform: scale(1.08);
+}
+.blanc_dark h3{
+    font-size: 13px;
+}
+
+.blanc_dark p{
+    font-size: 12px;
+}
+
+.fa-star{
+    font-size: 12px;
+}
+
+.phrase_icon{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.espace{
+    margin-top: 38px;
+}
+
+.blanc_dark{
+    padding: 10px;
+}
+
+.blanc i{
+    color: #0065FC
 }
 
 .non i {
     color: #F2F2F2 ;
 }
+/* Fin des hébergements */

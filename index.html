@@ -1,3 +1,4 @@
+<!-- Doctype html -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,9 +10,12 @@
     <title>Réservia</title>
 </head>
 <body>
+    <!-- fin de la Doctype html -->
  
+    <!-- C'est la div qui englobe tous -->
 <div class="container">
-<header>
+    <!-- En tête du site web -->
+<header class="photo">
       <img src="images/logo/Reservia.png" alt="Logo du site" >
         <nav>
             <ul class="flex">
@@ -21,10 +25,11 @@
             </ul>
         </nav>
 </header>
-
+<!-- Fin de l'en tête du site web -->
+<!-- Section comportant la barre de recherche et des informations complémentaire -->
 <section class=barre>
         <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-        <p class="marge">En plein centre ville ou en pleine nature</p>
+        <p>En plein centre ville ou en pleine nature</p>
         <form class="recherche">
             <i class="fas fa-map-marker-alt"></i>
             <input type="search" id="maRecherche" name="q"
@@ -32,7 +37,8 @@
               <button class="boutton">Rechercher</button>
           </form>
 </section>
- 
+<!-- Fin de la section barre de recherche -->
+ <!-- Début des filtres  -->
 <section class="filtres">
 
     <h2>Filtres</h2> 
@@ -66,20 +72,22 @@
     </div>
 
 </section>
-
+<!-- Fin des filtres -->
+<!-- Information complémentaire -->
 <section class="info">
     <div class="info_icone">
         <i class="fas fa-info"></i>
     </div>
     <p class="info_texte">Plus de 500 logements sont disponible dans cette ville</p>
 </section>
-
+<!-- Fin des infos complémentaires -->
+<!-- Section qui comprend l'hébergement à Marseille et qui comprend l'aside -->
 <section class="global">
 
 <div class=hebergement>
 
     <h2 id="ancre"> Hébergements à Marseille</h2>
-
+<!-- Chambres avec les informations complémentaires -->
     <figure class="chambre">
 
             <div class="color">
@@ -127,7 +135,7 @@
             <div class="color_texte">
                 <h3> Auberge le Panier</h3>
                 <p> Nuit à partir de <strong> 23€</strong></p>
-                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>        <span class="non"><i class="fas fa-star"></i></span>
             </div>
      
         </div>
@@ -141,48 +149,57 @@
      
         </div>
     </figure>
+    <!-- Fin des chambres et des informations complémentaires -->
     <p class="bas"> Afficher plus</p>
 </div>
-
+<!-- Début des chambres sur le côté du site web -->
 <aside class="cote">
 
-<div class="carte">
-
-    <div><img class="taille" src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel1"></div>
-    <div><h3> Hôtel le soleil du matin</h3>
-    <p> Nuit à partir de <strong> 128€</strong></p>
-    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+<div class="phrase_icon">
+    <h2 class="phrase"> Les plus populaires </h2>
+    <i class="fas fa-chart-line"></i>
 </div>
 
-<div class="carte">
-
-    <div>
-        <img class="taille" src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="hotel2">
-    </div>
-    <div>
+<div class="blanc">
+        <img src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="hotel1">
+    <div class="blanc_dark">
         <h3> Hôtel le soleil du matin</h3>
         <p> Nuit à partir de <strong> 128€</strong></p>
+        <div class="espace"></div>
         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    </div>
+</div>
+
+<div class="carte">
+
+    <div class="blanc">
+        <img src= "images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="hotel2">
+    <div class="blanc_dark">
+        <h3> Au coeur de l'eau Chambres d'hôtes</h3>
+        <p> Nuit à partir de <strong> 71€</strong></p>
+        <div class="espace"></div>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="non"><i class="fas fa-star"></i></span>
     </div>
 
 </div>
 
 <div class="carte">
-
-    <div>
-        <img class="taille" src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel3">
-    </div>
-    <div>
-        <h3 class="bas"> Hôtel le soleil du matin</h3>
-        <p class="bas"> Nuit à partir de <strong> 128€</strong></p>
-        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+    <div class="blanc">
+        <img src= "images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel3">
+    <div class="blanc_dark">
+        <h3> Hôtel Tout bleu et Blanc</h3>
+        <p> Nuit à partir de <strong> 68€</strong></p>
+        <div class="espace"></div>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><span class="non"><i class="fas fa-star"></i></span>
     </div>
 
 </div>
 
 </aside> 
-
+<!-- Fin des chambres sur le côté du site web -->
+<!-- Bas de page avec les informations complémentaires -->
 </section>
+</div>
  <footer>
         <div>
             <h3> À propos</h3>
@@ -201,5 +218,7 @@
             <p>Nous contacter</p>
     </div>
 </footer>
+<!-- Fin de la bas de page et des infos complémentaire -->
 </body>
 </html>
+<!-- Fin de la page du site web -->
