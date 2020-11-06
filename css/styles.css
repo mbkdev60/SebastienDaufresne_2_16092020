@@ -286,6 +286,7 @@ h1{
 .blanc:hover{
     transform: scale(1.08);
 }
+
 .blanc_dark h3{
     font-size: 13px;
 }
@@ -321,3 +322,102 @@ h1{
     color: #F2F2F2 ;
 }
 /* Fin des hébergements */
+/* Début des activictés à Marseille */
+.activicte{
+    display: flex;
+    padding: 20px 0 60px 0;
+}
+
+#marseille{
+    padding: 50px 0 0 0;
+}
+
+/* Une photo */
+.photo_taille{
+    width: 264px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    transform: scale(1);
+    transition: .3s;
+}
+
+.photo_taille:hover{
+    transform: scale(1.08);
+}
+
+.act_photo{
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+}
+/* Fin de la première photo */
+/* Début de la 2ème photo */
+.photo_vue{
+    border-radius: 20px 20px 0 0;
+    height: 100px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.chateau{
+    border-radius: 20px 20px 0 0;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.chateau_bas{
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    transform: scale(1);
+    transition: .3s;
+}
+
+.chateau_bas:hover{
+    transform: scale(1.08);
+}
+
+.flex_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+}
+
+.flexible{
+    display: flex;
+}
+
+.classement{
+    font-weight: bold;
+    margin: 0 0 0 20px;
+    padding: 10px 0 10px 0;
+}
+
+.chateau_1{
+    height: 180px;
+    width: 280px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.chateau_bas1{
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.classique{
+    font-weight: bold;
+    margin: 0 0 0 20px;
+    padding: 10px 0 10px 0;
+}
+
+.chateau_2{
+    border-radius: 20px 20px 0 0;
+    height: 120px;
+    width: 280px;
+    object-fit: cover;
+}
