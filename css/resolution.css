@@ -1,0 +1,127 @@
+@media screen and (max-width: 767px)
+{
+    .barre, .filtres, .info{
+        padding: 0 20px;
+    }
+
+    .button-text{
+        display:none;
+    }
+
+    .search{
+        display: block;
+        margin-left: -25px;
+        border-radius: 12px;
+        width: 40px;
+    }
+
+    .recherche{
+        display: flex;
+        align-items: center;
+    }
+
+    .fa-map-marker-alt{
+        padding: 3px 0;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .fa-search{
+        padding: 3px 0;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    form input{
+        border: 2px solid #F2F2F2;
+        padding: 10px 0;
+        font-size: 14px;
+    }
+
+
+    .filtres h2{
+        margin-bottom: 15px;
+    }
+
+    .global-categorie{
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .categorie{
+        margin-bottom: 10px;
+    }
+    
+    ul.flex li:first-child a{
+        border-top: none;
+        border-bottom: 2px #0065FC solid;
+        padding-bottom: 10px;
+    }
+
+    .flex li:nth-child(2) a:hover{
+        border-top: none;
+        border-bottom: 2px #0065FC solid;
+        padding-bottom: 10px;
+    }
+
+    
+
+
+/*---------------- Deja traité ------------*/
+   .global{
+       flex-direction: column;
+       padding: 0;
+   }
+
+   .hebergement{
+       order: 2;
+       width: 100%;
+       background-color: white;
+   }
+
+   .color{
+       width: 100%;
+       margin: 0 0 40px 0;
+   }
+
+   .cote{
+       width: 100%;
+       order: 1;
+   }
+
+   .bloc:first-child{
+    padding-left: 20px;
+    }
+
+    .bloc:last-child{
+        padding-right: 20px;;
+    }
+    
+   .activite{
+       flex-direction: column;
+       justify-content: space-around;
+   }
+   
+   .act_photo{
+       width: 100%;
+       margin: 0 0 40px 0;
+   }
+
+   .taille1,.taille2,.taille3,.taille5,.taille6{
+       height: 150px;
+   } 
+
+   header{
+       flex-direction: column;
+   }
+
+   .flex li:nth-child(3){
+    position: absolute;
+    top: 0;
+    right: 0;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+}

@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
 }
 /* Fin de la corps de page */
@@ -20,7 +20,9 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .flex{
@@ -31,6 +33,7 @@ header{
 
 a:hover{
     border-top: 2px #0065FC solid;
+    cursor: pointer;
 }
  
 li a{
@@ -39,12 +42,12 @@ li a{
     transition: .3s;
 }
 
-.photo img{
+header img{
     height: 40px;
+    width: 90px;
 }
 
-
-ul.flex li:nth-child(2) a{
+.flex li:nth-child(2) a{
     color: black;
 }
 
@@ -69,7 +72,20 @@ footer h3{
 }
 
 footer p{
+    transform: scale(1);
+    transition: .3s;
     padding: 10px 0;
+}
+
+footer p a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p a:hover{
+    border-top: none;
+    color:#0065FC;
 }
 /* Fin du footer */
 
@@ -80,14 +96,32 @@ footer p{
     margin-top: 60px;
 }
 
+.filtres{
+    flex-direction: row;
+}
+
+.global-categorie{
+    display: flex;
+    flex-direction: row;
+}
+
+.button-text{
+    display:block;
+}
+.search{
+    display:none;
+}
+
 .barre p{
-    padding: 15px;
+    padding: 10px 4px 15px 0;
 }
 
 .boutton{
     color:#ffff;
     background-color: #0065FC;
-    font-size: 22px
+    font-size: 16px;
+    border: 10px #0065FC solid;
+    border-radius: 0px 15px 15px 0px;
 }
 
 .recherche{
@@ -96,29 +130,31 @@ footer p{
     margin-top: 0px;
 }
 
+.fa-map-marker-alt{
+    background-color: #F2F2F2 ;
+    border: 10px  #F2F2F2 solid;
+    border-radius: 15px  0px  0px  15px;
+    font-size: 22px;
+}
+
 input{
-    font-size: 20px;
+    font-size: 18px;
     border: 2px #F2F2F2 solid;
 }
 
-.boutton{
-    border: 10px #0065FC solid;
-    border-radius: 0px 15px 15px 0px;
-}
-
 form i{
-    background-color: #F2F2F2;
-    border: 10px #F2F2F2 solid;
     border-radius: 15px 0px 0px 15px;
     font-size: 22px;
 }
 
 input::-webkit-input-placeholder{
+    font-weight: bold;
     color: black;
+    padding-left: 15px;
 }
 
-h1{
-    margin-bottom: 0px;
+.barre h1{
+    font-weight: bold;
 }
 
 .filtres{
@@ -136,6 +172,14 @@ h1{
 
 .bas{
     font-weight: bold;
+}
+
+.fa-info{
+    font-size: 14px;
+}
+
+.fa-map-marker-alt{
+    font-size: 18px;
 }
 /* Fin de la barre de recherche et des informations complémentaires */
 
@@ -182,8 +226,8 @@ h1{
     align-items: center;
     justify-content: center;
     border: 2px solid #F2F2F2;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50px; 
     margin-right: 14px; 
 }
@@ -250,6 +294,7 @@ h1{
 
 .global{
     display: flex;
+    flex-direction: row;
     padding: 5px;
     width: 100%;
 }
@@ -323,101 +368,66 @@ h1{
 }
 /* Fin des hébergements */
 /* Début des activictés à Marseille */
-.activicte{
+.activite{
     display: flex;
-    padding: 20px 0 60px 0;
-}
-
-#marseille{
-    padding: 50px 0 0 0;
-}
-
-/* Une photo */
-.photo_taille{
-    width: 264px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    transform: scale(1);
-    transition: .3s;
-}
-
-.photo_taille:hover{
-    transform: scale(1.08);
+    justify-content: space-between;
+    padding-bottom: 60px;
 }
 
 .act_photo{
     background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    box-shadow : 5px  5px  5px  rgba( 0 ,  0 ,  0 ,  .2 );
+    width: 100%;
 }
-/* Fin de la première photo */
-/* Début de la 2ème photo */
-.photo_vue{
+
+.act_photo img{
     border-radius: 20px 20px 0 0;
-    height: 100px;
-    width: 300px;
+}
+
+.taille1{
+    height: 423px;
+    width: 100%;
     object-fit: cover;
 }
+/* Bloc de 4 images */
 
-.chateau{
-    border-radius: 20px 20px 0 0;
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-}
-
-.chateau_bas{
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
-    transform: scale(1);
-    transition: .3s;
-}
-
-.chateau_bas:hover{
-    transform: scale(1.08);
-}
-
-.flex_container{
+.bloc{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0 30px 0 30px;
+    padding: 0 20px;
 }
 
-.flexible{
-    display: flex;
+.bloc:first-child{
+    padding-left: 0;
 }
 
-.classement{
-    font-weight: bold;
-    margin: 0 0 0 20px;
-    padding: 10px 0 10px 0;
+.bloc:last-child{
+    padding-right: 0;
 }
 
-.chateau_1{
-    height: 180px;
-    width: 280px;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-}
-
-.chateau_bas1{
-    background-color: white;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
-}
-
-.classique{
-    font-weight: bold;
-    margin: 0 0 0 20px;
-    padding: 10px 0 10px 0;
-}
-
-.chateau_2{
-    border-radius: 20px 20px 0 0;
-    height: 120px;
-    width: 280px;
+.taille2{
+    height: 185px;
+    width: 100%;
     object-fit: cover;
 }
+
+.taille3{
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.taille5{
+    height: 165px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.taille6{
+    height: 181px;
+    width: 100%;
+    object-fit: cover;
+}
+/* Fin des blocs à 4 images */
