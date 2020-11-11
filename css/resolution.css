@@ -1,7 +1,11 @@
 @media screen and (max-width: 767px)
 {
-    .barre, .filtres, .info{
+    .barre, .filtres {
         padding: 0 20px;
+    }
+
+    .info{
+        padding: 0 20px 40px 20px;
     }
 
     .button-text{
@@ -34,7 +38,8 @@
 
     form input{
         border: 2px solid #F2F2F2;
-        padding: 10px 0;
+        padding: 10px;
+        width: 100%;
         font-size: 14px;
     }
 

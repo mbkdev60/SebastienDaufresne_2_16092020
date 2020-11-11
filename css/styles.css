@@ -226,8 +226,8 @@ input::-webkit-input-placeholder{
     align-items: center;
     justify-content: center;
     border: 2px solid #F2F2F2;
-    width: 30px;
-    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
     border-radius: 50px; 
     margin-right: 14px; 
 }
