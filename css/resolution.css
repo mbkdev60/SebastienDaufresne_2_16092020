@@ -39,7 +39,7 @@
     form input{
         border: 2px solid #F2F2F2;
         padding: 10px;
-        width: 100%;
+        width: 50%;
         font-size: 14px;
     }
 
@@ -56,6 +56,10 @@
     .categorie{
         margin-bottom: 10px;
     }
+
+    li{
+        width: 50%
+    }
     
     ul.flex li:first-child a{
         border-top: none;
@@ -69,8 +73,10 @@
         padding-bottom: 10px;
     }
 
-    
-
+    .flex li:nth-child(2) a{
+        border-bottom: 2px #F2F2F2 solid;
+        padding-bottom: 10px;
+    }
 
 /*---------------- Deja traité ------------*/
    .global{
@@ -122,8 +128,8 @@
 
    .flex li:nth-child(3){
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 30px;
+    right: -80px;
     }
 
     footer{

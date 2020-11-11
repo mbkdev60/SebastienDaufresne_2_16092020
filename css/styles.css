@@ -45,6 +45,7 @@ li a{
 header img{
     height: 40px;
     width: 90px;
+    margin: 20px 0 0 30px;
 }
 
 .flex li:nth-child(2) a{
@@ -108,6 +109,7 @@ p a:hover{
 .button-text{
     display:block;
 }
+
 .search{
     display:none;
 }
@@ -368,6 +370,10 @@ input::-webkit-input-placeholder{
 }
 /* Fin des hébergements */
 /* Début des activictés à Marseille */
+
+#marseille{
+    padding: 50px 0 20px 30px;
+}
 .activite{
     display: flex;
     justify-content: space-between;
@@ -397,6 +403,12 @@ input::-webkit-input-placeholder{
     flex-direction: column;
     justify-content: space-between;
     padding: 0 20px;
+    transform: scale(1);
+    transition: .3s;
+}
+
+.bloc:hover{
+    transform: scale(1.08);
 }
 
 .bloc:first-child{
@@ -431,3 +443,10 @@ input::-webkit-input-placeholder{
     object-fit: cover;
 }
 /* Fin des blocs à 4 images */
+
+/* Paragraphe des images */
+
+.classement{
+    margin: 20px;
+    font-weight: bold;
+}
