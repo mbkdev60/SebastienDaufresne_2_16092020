@@ -353,10 +353,6 @@ input::-webkit-input-placeholder{
     margin-bottom: 30px;
 }
 
-.espace{
-    margin-top: 38px;
-}
-
 .blanc_dark{
     padding: 10px;
 }
@@ -367,6 +363,10 @@ input::-webkit-input-placeholder{
 
 .non i {
     color: #F2F2F2 ;
+}
+
+.blanc p{
+        margin-bottom: 38px;
 }
 /* Fin des hébergements */
 /* Début des activictés à Marseille */

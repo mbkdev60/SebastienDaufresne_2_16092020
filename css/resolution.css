@@ -39,7 +39,6 @@
     form input{
         border: 2px solid #F2F2F2;
         padding: 10px;
-        width: 50%;
         font-size: 14px;
     }
 
@@ -57,10 +56,19 @@
         margin-bottom: 10px;
     }
 
-    li{
-        width: 50%
+    ul.flex li:first-child a, ul.flex li:nth-child(2){
+        border-top: none;
+        border-bottom: 2px #F2F2F2 solid;
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: center;
     }
-    
+
+    ul.flex li:first-child a, ul.flex li:nth-child(2):hover{
+        border-bottom: 2px #0065FC solid;
+        padding-bottom: 10px;
+    }
+
     ul.flex li:first-child a{
         border-top: none;
         border-bottom: 2px #0065FC solid;
@@ -69,16 +77,8 @@
 
     .flex li:nth-child(2) a:hover{
         border-top: none;
-        border-bottom: 2px #0065FC solid;
-        padding-bottom: 10px;
-    }
+      }
 
-    .flex li:nth-child(2) a{
-        border-bottom: 2px #F2F2F2 solid;
-        padding-bottom: 10px;
-    }
-
-/*---------------- Deja traité ------------*/
    .global{
        flex-direction: column;
        padding: 0;
@@ -128,11 +128,16 @@
 
    .flex li:nth-child(3){
     position: absolute;
+    text-align: end;
     top: 30px;
-    right: -80px;
+    left: 240px;
     }
 
     footer{
         flex-direction: column;
+    }
+
+    .hebergement{
+        margin: 0;
     }
 }
