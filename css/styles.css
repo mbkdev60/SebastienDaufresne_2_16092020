@@ -385,6 +385,8 @@ input::-webkit-input-placeholder{
     border-radius: 20px;
     box-shadow : 5px  5px  5px  rgba( 0 ,  0 ,  0 ,  .2 );
     width: 100%;
+    transform: scale(1);
+    transition: .3s;
 }
 
 .act_photo img{
@@ -403,11 +405,9 @@ input::-webkit-input-placeholder{
     flex-direction: column;
     justify-content: space-between;
     padding: 0 20px;
-    transform: scale(1);
-    transition: .3s;
 }
 
-.bloc:hover{
+.act_photo:hover{
     transform: scale(1.08);
 }
 
