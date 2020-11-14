@@ -1,5 +1,9 @@
+/* Début du média queries */
+
 @media screen and (max-width: 768px)
 {
+    /* Réglages de la marge d'intérieur de la barre de recherche et des filtres */
+
     .barre, .filtres {
         padding: 0 20px;
     }
@@ -57,6 +61,8 @@
         margin-bottom: 10px;
     }
 
+    /* réglage du header */
+
     ul.flex li:first-child a, ul.flex li:nth-child(2){
         border-top: none;
         border-bottom: 2px #F2F2F2 solid;
@@ -80,6 +86,7 @@
         border-top: none;
       }
 
+      /* Réglages des sections */
    .global{
        flex-direction: column;
        padding: 0;
@@ -142,3 +149,4 @@
         margin: 0;
     }
 }
+/* Fin du média queries */
