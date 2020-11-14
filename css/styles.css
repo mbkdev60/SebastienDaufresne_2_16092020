@@ -56,6 +56,10 @@ ul.flex li:first-child a{
     border-top: 2px #0065FC solid;
     padding-top: 28px;
 }
+
+ul.flex li:nth-child(3) a{
+    color: #0065FC;
+}
 /* Fin de l'en tête de la page web */
 
 /* Début du pied de la page */
