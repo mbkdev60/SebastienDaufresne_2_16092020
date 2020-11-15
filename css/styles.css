@@ -449,10 +449,6 @@ a{
     padding-left: 0;
 }
 
-.bloc:last-child{
-    padding-right: 0;
-}
-
 .taille2{
     height: 185px;
     width: 100%;
