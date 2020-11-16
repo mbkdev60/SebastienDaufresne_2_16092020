@@ -78,10 +78,10 @@ ul.flex li:nth-child(3) a{
 footer{
     background-color: #F2F2F2;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     margin: 0 auto;
-    padding: 30px;
+    padding: 30px 300px 30px 40px;
 }
 
 footer h3{
