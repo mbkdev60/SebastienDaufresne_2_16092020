@@ -43,13 +43,13 @@
 
     form input{
         border: 2px solid #F2F2F2;
-        padding: 10px 40px 10px 0;
+        padding: 10px 70px 10px 0;
         font-size: 16px;
     }
 
 
     .filtres h2{
-        margin-bottom: 15px;
+        margin: 15px 0 15px 0;
     }
 
     .global-categorie{
@@ -58,7 +58,7 @@
     }
 
     .categorie{
-        margin-bottom: 10px;
+        margin-bottom: 14px;
     }
 
     /* réglage du header */
@@ -73,21 +73,21 @@
     }
 
     ul.flex li:first-child a, ul.flex li:nth-child(2):hover{
-        border-bottom: 2px #0065FC solid;
+        border-bottom: 3px #0065FC solid;
         padding-bottom: 10px;
     }
 
     ul.flex li:first-child a{
         border-top: none;
-        border-bottom: 2px #0065FC solid;
+        border-bottom: 3px #0065FC solid;
         padding-bottom: 10px;
         padding-left: 40px;
+        color: #0065FC;
     }
 
     ul.flex li:nth-child(2){
-        border-bottom: 2px #F2F2F2 solid;
+        border-bottom: 3px #F2F2F2 solid;
         padding-bottom: 10px;
-        padding-left: 40px;
     }
 
     .flex li:nth-child(2) a:hover{
@@ -136,7 +136,7 @@
    }
 
    .taille1,.taille2,.taille3,.taille5,.taille6{
-       height: 150px;
+       height: 120px;
    } 
 
    header{
@@ -147,7 +147,7 @@
     position: absolute;
     text-align: end;
     top: 30px;
-    right: 12px;
+    right: 0;
     }
 
     footer{

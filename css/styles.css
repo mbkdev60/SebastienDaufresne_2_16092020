@@ -40,7 +40,7 @@ header a:hover{
  
 li a{
     text-decoration: none;
-    padding: 25px;
+    padding: 34px;
     transition: .3s;
 }
 
@@ -48,6 +48,7 @@ header img{
     height: 40px;
     width: 90px;
     margin-top: 40px;
+    object-fit: cover;
 }
 
 .flex li:nth-child(2) a{
@@ -57,10 +58,15 @@ header img{
 ul.flex li:first-child a{
     border-top: 2px #0065FC solid;
     padding-top: 23px;
+    color: #0065FC;
 }
 
 ul.flex li:first-child a:hover{
     color: #0065FC;
+}
+
+ul.flex li:nth-child(2) a:hover{
+    color:#0065FC;
 }
 
 ul.flex li:nth-child(3) a{
@@ -125,7 +131,7 @@ p a:hover{
 }
 
 .barre p{
-    padding: 10px 4px 15px 0;
+    padding: 10px 4px 30px 0;
 }
 
 .boutton{
@@ -229,7 +235,7 @@ a{
 }
 
 .categorie_title{
-    margin: 0 16px;
+    margin: 0 15px;
     font-size: 16px;
 }
 
@@ -263,7 +269,7 @@ a{
 
 .color img{
     border-radius: 14px 14px 0px 0px;
-    height: 120px;
+    height: 100px;
     width: 100%;
     object-fit: cover;
 }
@@ -279,7 +285,7 @@ a{
     border-radius: 20px;
     background-color: white;
     padding: 5px;
-    margin: 0 40px 22px 0;
+    margin: 0 40px 30px 0;
     width: calc(35% - 40px);
     transform: scale(1);
     transition: .3s;
@@ -331,7 +337,7 @@ a{
     background-color:#F2F2F2;
     width: 30%;
     border-radius: 10px;
-    padding: 18px;
+    padding: 29px 18px 0 18px;
 }
 
 .blanc img{
@@ -346,7 +352,7 @@ a{
     padding: 5px;
     border-radius: 10px;
     background-color: white;
-    margin: 0 0 40px 0;
+    margin: 0 0 30px 0;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .2);
     transform: scale(1);
     transition: .3s;
@@ -391,6 +397,10 @@ a{
 
 .margin{
     margin-bottom: 40px;
+}
+
+.margine{
+    margin-bottom: 30px;
 }
 
 .padding{
